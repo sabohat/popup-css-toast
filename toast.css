@@ -1,10 +1,4 @@
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
 :root {
   --dark: #78fad1;
   --light: #ffffff;
@@ -14,16 +8,10 @@
   --info: #3498db;
   --random: #eb43ff;
 }
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: var(--dark);
-}
+
 .notifications {
   position: fixed;
-  top: 30px;
+  top: 200px;
   right: 20px;
 }
 .notifications :where(.toast, .column) {
