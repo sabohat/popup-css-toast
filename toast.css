@@ -9,16 +9,16 @@
   --random: #eb43ff;
 }
 
-.notifications {
+.notifications-popup-app {
   position: fixed;
   top: 200px;
   right: 20px;
 }
-.notifications :where(.toast, .column) {
+.notifications-popup-app :where(.toast, .column) {
   display: flex;
   align-items: center;
 }
-.notifications .toast {
+.notifications-popup-app .toast {
   width: 400px;
   position: relative;
   overflow: hidden;
@@ -44,7 +44,7 @@
     transform: translateX(-10px);
   }
 }
-.notifications .toast.hide {
+.notifications-popup-app .toast.hide {
   animation: hide_toast 0.3s ease forwards;
 }
 @keyframes hide_toast {
@@ -136,10 +136,10 @@
 }
 
 @media screen and (max-width: 530px) {
-  .notifications {
+  .notifications-popup-app {
     width: 95%;
   }
-  .notifications .toast {
+  .notifications-popup-app .toast {
     width: 100%;
     font-size: 1rem;
     margin-left: 20px;
